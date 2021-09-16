@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /* Primary */
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --white: hsl(0, 100%, 100%);
+
+    /* Neutral */
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+
+    /* Font Size */
+    font-size: 15px;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    font-size: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: var(--VeryLightGray);
+}
+
+/* Useful Flex Box */
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-part {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.first-part h1 {
+    font-weight: 200;
+    font-size: 30px;
+    color: var(--GrayishBlue);
+}
+
+.first-part h2 {
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--VeryDarkBlue);
+}
+
+.first-part p {
+    color: var(--GrayishBlue);
+    margin-top: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 13%;
+}
+
+.col:first-child {
+    margin-left: 0;
+    border-top: 4px solid var(--Cyan);
+}
+
+.col:nth-child(2) {
+    border-top: 4px solid var(--Red);
+    transform: translateY(-52%);
+}
+
+.col:nth-child(3) {
+    border-top: 4px solid var(--Blue);
+}
+
+.col:last-child {
+    border-top: 4px solid var(--Orange);
+    position: absolute;
+    margin-left: 0;
+    transform: translateY(57%);
+}
+
+.col h3 {
+    color: var(--VeryDarkBlue);
+}
+
+.col p {
+    color: var(--GrayishBlue);
+    font-size: 13px;
+    line-height: 1.6;
+    margin-top: 10px;;
+}
+
+.col {
+    flex-basis: 25.5%;
+    height: 250px;
+    background: var(--white);
+    margin-left: 22px;
+    border-radius: 6px;
+    padding: 25px 30px;
+    box-shadow: 2px 8px 20px -4px var(--VeryDarkBlue);
+}
+
+.magnificent-glass {
+    position: absolute;
+    right: 63%;
+    top: 59%;
+}
+
+.light-bulb {
+    position: absolute;
+    right: 12%;
+    top: 62%;
+}
+
+.house {
+    position: absolute;
+    right: 12%;
+    top: 62%;
+}
+
+.computer {
+    position: absolute;
+    right: 22%;
+    top: 59%;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media(min-width: 767px) {
+    .hide-for-desktop {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .hide-for-mobile {
+        display: none;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .mobile-col{
+        width: 350px;
+        height: 250px;
+        background: var(--white);
+        border-radius: 6px;
+        margin-top: 20px;
+        padding: 25px 30px;
+        box-shadow: 2px 8px 20px -4px var(--VeryDarkBlue);
+    }
+
+    .mobile-col h3 {
+        color: var(--VeryDarkBlue);
+    }
+    
+    .mobile-col p {
+        color: var(--GrayishBlue);
+        font-size: 13px;
+        line-height: 1.6;
+        margin-top: 10px;;
+    }
+
+    .mobile-col:first-child {
+        border-top: 4px solid var(--Cyan);
+    }
+    
+    .mobile-col:nth-child(2) {
+        border-top: 4px solid var(--Red);
+    }
+    
+    .mobile-col:nth-child(3) {
+        border-top: 4px solid var(--Orange);
+    }
+    
+    .mobile-col:last-child {
+        border-top: 4px solid var(--Blue);
+    }
+
+    .magnificent-glass {
+        position: absolute;
+        right: 17%;
+        top: 52%;
+    }
+    
+    .light-bulb {
+        position: absolute;
+        right: 17%;
+        top: 118%;
+    }
+    
+    .house {
+        position: absolute;
+        right: 17%;
+        top: 85%;
+    }
+    
+    .computer {
+        position: absolute;
+        right: 17%;
+        top: 152%;
+    }
+
+    .attribution {
+        position: absolute;
+        top: 168%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
