@@ -113,9 +113,9 @@ body {
 }
 
 .magnificent-glass {
-    position: absolute;
-    right: 63%;
-    top: 59%;
+    position: relative;
+    left: 235px;
+    top: 50px;
 }
 
 .light-bulb {
@@ -131,9 +131,9 @@ body {
 }
 
 .computer {
-    position: absolute;
-    right: 22%;
-    top: 59%;
+    position: relative;
+    left: 235px;
+    top: 50px;
 }
 
 .attribution {
