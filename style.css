@@ -195,28 +195,32 @@ body {
         border-top: 4px solid var(--Blue);
     }
 
+    .image {
+        position: relative;
+    }
+
     .magnificent-glass {
         position: absolute;
-        right: 17%;
-        top: 52%;
+        left: 215px;
+        top: 48px;
     }
     
     .light-bulb {
         position: absolute;
-        right: 17%;
-        top: 118%;
+        left: 215px;
+        top: 48px;
     }
     
     .house {
         position: absolute;
-        right: 17%;
-        top: 85%;
+        left: 215px;
+        top: 48px;
     }
     
     .computer {
         position: absolute;
-        right: 17%;
-        top: 152%;
+        left: 215px;
+        top: 48px;
     }
 
     .attribution {
